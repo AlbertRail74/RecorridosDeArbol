@@ -103,7 +103,14 @@ void preorden(Nodo *arbol)
 
 void inorden(Nodo *arbol)
 {
-    //codigo
+    if(arbol == nullptr)
+        return;
+    else
+    {
+        inorden(arbol->izq);
+        cout<<arbol->dato<<" - ";
+        inorden(arbol->der);
+    }
 }
 
 void postorden(Nodo *arbol)
