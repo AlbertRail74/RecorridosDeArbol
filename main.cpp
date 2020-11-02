@@ -7,7 +7,8 @@ struct Nodo
     int dato;
     Nodo *der;
     Nodo *izq;
-};
+}
+;
 
 Nodo *arbol = nullptr;
 Nodo *crear_nodo(int);
@@ -39,7 +40,8 @@ int main()
                 cout<<"\n Recorrido en PreOrden \n"<<endl;
 
                 cout<<"\n\n";
-                system("pause");}
+                system("pause");
+            }
         }
         else if(opc==3)
         {
@@ -50,7 +52,8 @@ int main()
                 cout<<"\n Recorrido en PostOrden \n"<<endl;
 
                 cout<<"\n\n";
-                system("pause");}
+                system("pause");
+            }
         }
         else if(opc==4)
         {
@@ -61,12 +64,14 @@ int main()
                 cout<<"\n Recorrido en InOrden \n"<<endl;
 
                 cout<<"\n\n";
-                system("pause");}
+                system("pause");
+            }
 
         }
         else if(opc==5)
         {
-            break;}
+            break;
+        }
     }
     return 0;
 }
@@ -86,14 +91,16 @@ void insertar_nodo(Nodo *&arbol, int dato)
     if (arbol == nullptr)
     {
         Nodo *nuevo_nodo = crear_nodo(dato);
-        arbol = nuevo_nodo;}
+        arbol = nuevo_nodo;
+    }
     else
     {
         int raiz = arbol->dato;
         if(dato < raiz)
             insertar_nodo(arbol->izq,dato);
         else
-            insertar_nodo(arbol->der,dato);}
+            insertar_nodo(arbol->der,dato);
+    }
 }
 
 void preorden(Nodo *arbol)
