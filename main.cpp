@@ -24,7 +24,12 @@ int main()
     while(true)
     {
         cout<<"\t\t Menu"<<endl;
-        cout<<"\n 1.- Agregar \n 2.- Recorrido en PreOrden \n 3.- Recorrido en PostOrden \n 4.- Recorrido en InOrden \n 5.- Salir \n\n Selecione opcion -> ";
+        cout<<"\n 1.- Agregar"<<endl;
+        cout<<"2.- Recorrido en PreOrden"<<endl;
+        cout<<"3.- Recorrido en PostOrden"<<endl;
+        cout<<"4.- Recorrido en InOrden"<<endl;
+        cout<<"5.- Salir "<<endl;
+        cout<<"\n Selecione opcion -> ";
         cin>>opc;
         if(opc==1){
             cout<<"\n\t\t Agregar dato al arbol \n"<<endl;
