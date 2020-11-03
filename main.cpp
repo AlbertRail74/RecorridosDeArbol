@@ -110,7 +110,14 @@ void insertar_nodo(Nodo *&arbol, int dato)
 
 void preorden(Nodo *arbol)
 {
-    //codigo
+    if(arbol == nullptr)
+        return;
+    else
+    {
+        cout<<arbol->dato<<" - ";
+        preorden(arbol->izq);
+        preorden(arbol->der);
+    }
 }
 
 void inorden(Nodo *arbol)
